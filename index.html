@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>RSVP</title>
+<style>
+  :root {
+    --bg:#fbf1e1; --fg:#3a2a22; --muted:#7a6558; --accent:#c2185b; --gold:#b8862b;
+    --card:#fffaf1; --line:#e6d3b0;
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.6 Georgia, "Times New Roman", serif; }
+  main { max-width:640px; margin:0 auto; padding:32px 16px 56px; }
+  .invite { display:block; width:100%; max-width:420px; height:auto; margin:0 auto 32px; border-radius:12px;
+            box-shadow:0 4px 18px rgba(90,40,20,.25); }
+  h1 { font-size:clamp(1.6rem, 6vw, 2.2rem); text-align:center; margin:0 0 6px; color:var(--accent); line-height:1.2; }
+  .sub { text-align:center; color:var(--muted); margin:0 0 20px; }
+  dl { display:grid; grid-template-columns:auto 1fr; gap:6px 16px; background:var(--card); border:1px solid var(--line);
+       border-radius:12px; padding:16px 20px; margin:0 0 28px; }
+  dt { color:var(--gold); font:600 13px/2 system-ui, sans-serif; letter-spacing:.12em; text-transform:uppercase; }
+  dd { margin:0; }
+  .surprise { text-align:center; font-style:italic; color:var(--accent); margin:0 0 28px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:8px; }
+  iframe { width:100%; height:900px; border:0; display:block; background:transparent; }
+  .fallback { text-align:center; font:14px system-ui, sans-serif; color:var(--muted); margin-top:16px; }
+  .fallback a { color:var(--accent); }
+  @media (max-width:480px) { dl { grid-template-columns:1fr; } dt { line-height:1.2; margin-top:6px; } }
+</style>
+</head>
+<body>
+<main>
+  <img class="invite" src="invite.webp" alt="Invitation to Romilla's 75th surprise birthday: Saturday 23 January 2027, 5:30 pm onwards, Mumbai Dreams, 15 Phoenix Hwy, Greenbury, Phoenix, 4068. Dress code smart casual.">
+
+  <h1>Romilla's 75th Surprise Birthday</h1>
+  <p class="sub">Please RSVP by <strong>5 December 2026</strong>.</p>
+
+  <dl>
+    <dt>Date</dt><dd>Saturday, 23 January 2027</dd>
+    <dt>Time</dt><dd>5:30 pm onwards</dd>
+    <dt>Venue</dt><dd>Mumbai Dreams, 15 Phoenix Hwy, Greenbury, Phoenix, 4068</dd>
+    <dt>Dress code</dt><dd>Smart casual</dd>
+  </dl>
+
+  <p class="surprise">It's a surprise &mdash; please keep it between us!</p>
+
+  <div class="card">
+    <iframe id="rsvp-form" src="https://docs.google.com/forms/d/e/1FAIpQLSc49tA4_PEPsekeRLBsmYSjPjBlbg3qlPW0KNCCVP6k0uTgeQ/viewform?embedded=true" title="RSVP form" loading="lazy">Loading&hellip;</iframe>
+  </div>
+  <p class="fallback">Form not loading? <a id="form-link" href="https://docs.google.com/forms/d/e/1FAIpQLSc49tA4_PEPsekeRLBsmYSjPjBlbg3qlPW0KNCCVP6k0uTgeQ/viewform" target="_blank" rel="noopener">Open it in a new tab</a>.</p>
+</main>
+</body>
+</html>
